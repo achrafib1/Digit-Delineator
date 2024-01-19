@@ -9,12 +9,22 @@ def show():
     # Page title
     st.set_page_config(page_title="Digit Delineator!", layout="centered")
 
+    # Hide the app page
+    st.markdown(
+        """
+    <style>
+    a[href$="/"] {display: none;}
+
+    </style>
+    """,
+        unsafe_allow_html=True,
+    )
     with st.container():
-        st.title("Welcome to Digit Delineator!")
+        st.title("🎉 Welcome to Digit Delineator! 🎉")
 
     # Introduction
     with st.container():
-        st.header("Introduction", divider="orange")
+        st.header("📚 Introduction", divider="orange")
         page_bg_img = "static/images/_65798238-9ae6-4612-b254-8712ed42d675.jpg"
         page_bg = f"""
         <style>
@@ -36,9 +46,9 @@ def show():
         st.markdown(
             """
             <p style='color: black;'>
-            Welcome, wizard! Ready to cast some number spells? <br/><br/>
-            This app uses the power of machine learning to recognize the digit you draw. 
-            Think of it as casting a spell, and the app will predict the result of your spell.
+            🧙‍♂️ Welcome, wizard! Ready to cast some number spells? 🪄 <br/><br/>
+            This app uses the power of machine learning 🧠💡 to recognize the digit you draw.
+            Think of it as casting a spell, and the app will predict the result of your spell. 🎯
             </p>
         
         """,
@@ -48,7 +58,7 @@ def show():
 
     # Navigation
     with st.container():
-        st.header("Navigation")
+        st.header("🎩 Begin the Magic")
         if st.button("Start", use_container_width=True):
             st.markdown(
                 f"""<style>
@@ -81,3 +91,6 @@ def show():
         Made with ❤️ by name
         """
         )
+
+
+show()

@@ -17,8 +17,16 @@ def show():
     # Page title
     st.set_page_config(page_title="Cast Your Spell !", layout="centered")
 
+    # Hide the app page
+    st.markdown(
+        """
+    <style>
+    a[href$="/"] {display: none;}
+    """,
+        unsafe_allow_html=True,
+    )
     with st.container():
-        st.title("Here you can cast your spell!")
+        st.title("📍 Here you can cast your spell! 🎩✨")
 
     # Load the crystal ball image
     crystal_ball = Image.open("static/images/digit_ball.jpg").resize((1000, 1850))
@@ -38,7 +46,7 @@ def show():
         st.title("Cast Your Spell")
         canvas = st_canvas(width=225, height=350)
     with col3:
-        st.title("Predicted Probabilities")
+        st.title("📊Predicted Probabilities")
         progress_plot = st.empty()
         probabilities = [0 for _ in range(10)]
         progress_plot.bar_chart(probabilities, use_container_width=True, height=350)
@@ -116,7 +124,7 @@ def show():
 
     # In the second column, display the crystal ball image
     with col2:
-        st.title("Crystal Ball")
+        st.title("Crystal Ball 🔮")
         st.image(crystal_ball, use_column_width=True)
 
 
