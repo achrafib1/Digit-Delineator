@@ -1,7 +1,5 @@
 # Digit-Delineator
 
-Sure, I can help you create a detailed `README.md` file for your project. Here's a template that follows best practices:\*
-
 ## Description
 
 Digit Delineator is an application that predicts handwritten digits. It uses a model trained on the MNIST dataset with TensorFlow and Keras, and the user interface is built with Streamlit.
@@ -11,13 +9,13 @@ Digit Delineator is an application that predicts handwritten digits. It uses a m
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/digit-delineator.git
+git clone https://github.com/achrafib1/Digit-Delineator.git
 ```
 
 2. Navigate to the project directory:
 
 ```bash
-cd digit-delineator
+cd Digit-Delineator
 ```
 
 3. Install the required packages:
