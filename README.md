@@ -29,7 +29,7 @@ pip install -r requirements.txt
 To run the application, use the following command:
 
 ```bash
-streamlit run app.py
+streamlit run src\app.py
 ```
 
 Then, open your web browser and go to `http://localhost:8501` to view the app.
