@@ -6,11 +6,25 @@ import time
 import tensorflow as tf
 from keras.models import load_model
 import cv2
+import os
+import requests
 
 
 def load_digit_model():
-    model = load_model("src/model/model.h5")
-    return model
+    model_path = "src/model/model.h5"
+
+    if not os.path.exists(model_path):
+        url = "https://github.com/achrafib1/Digit-Delineator/releases/download/v1.0/model.h5"
+        response = requests.get(url, allow_redirects=True)
+        st.write(response)
+        with open(model_path, "wb") as f:
+            f.write(response.content)
+
+    if os.path.exists(model_path):
+        model = load_model(model_path)
+        return model
+    else:
+        print(f"File {model_path} does not exist.")
 
 
 def show():

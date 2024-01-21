@@ -1,7 +1,7 @@
-from pages import home
 import streamlit as st
 
-home.show()
+# Page title
+st.set_page_config(page_title="Digit Delineator!", layout="centered")
 st.markdown(
     """
     <style>
@@ -17,3 +17,18 @@ st.markdown(
     """,
     unsafe_allow_html=True,
 )
+
+
+def show():
+    # Page title
+    st.markdown(
+        "<h1 style='text-align: center; color: black;'>Digit Delineator</h1>",
+        unsafe_allow_html=True,
+    )
+
+    st.image("static/images/_1eecbcb2-389a-4f9c-bcc2-48bc8cb79fa5.jpg")
+    if st.button("Start", use_container_width=True):
+        st.switch_page("pages/home.py")
+
+
+show()

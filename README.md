@@ -18,7 +18,22 @@ git clone https://github.com/achrafib1/Digit-Delineator.git
 cd Digit-Delineator
 ```
 
-3. Install the required packages:
+3. (Recommended) Create a virtual environment:
+   ```
+   python3 -m venv env
+   ```
+4. Activate the virtual environment:
+
+   - On Windows:
+     ```
+     .\env\Scripts\activate
+     ```
+   - On Unix or MacOS:
+     ```
+     source env/bin/activate
+     ```
+
+5. Install the required packages:
 
 ```bash
 pip install -r requirements.txt
