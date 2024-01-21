@@ -4,6 +4,8 @@
 
 Digit Delineator is an application that predicts handwritten digits. It uses a model trained on the MNIST dataset with TensorFlow and Keras, and the user interface is built with Streamlit.
 
+![App Screenshot](static/images/digit_prediction_image.jpg)
+
 ## Installation
 
 1. Clone the repository:
