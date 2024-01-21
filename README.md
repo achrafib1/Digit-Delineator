@@ -19,9 +19,11 @@ cd Digit-Delineator
 ```
 
 3. (Recommended) Create a virtual environment:
-   ```
-   python3 -m venv env
-   ```
+
+```
+python3 -m venv env
+```
+
 4. Activate the virtual environment:
 
    - On Windows:
@@ -43,8 +45,16 @@ pip install -r requirements.txt
 
 To run the application, use the following command:
 
-```bash
-streamlit run src\app.py
-```
+- On **Windows**, use:
+
+  ```bash
+  streamlit run src\app.py
+  ```
+
+- On **macOS** or **Linux**, use:
+
+  ```bash
+  streamlit run src/app.py
+  ```
 
 Then, open your web browser and go to `http://localhost:8501` to view the app.
